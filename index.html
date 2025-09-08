@@ -3,85 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tugas Individu - Formulir</title>
+    <!--CSS Langsung di sini-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            padding: 25px;
+        }
+
+        form {
+            background-color: aliceblue;
+            padding: 25px;
+            border-radius: 15px;
+            width: 400px;
+        }
+
+        fieldset {
+            border: 5px solid pink ;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: rgb(40, 97, 134);
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px 8px;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #a35e8b;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        textarea:focus 
+            select:focus {
+                border-color: rgb(211, 17, 17);
+                box-shadow: 0 0 4px;
+            }
+
+            input[type="submit"],
+            input[type="reset"] {
+                background: rgb(58, 140, 78);
+                border: none;
+                color: white;
+                padding: 8px 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-right: 6px;
+                font-weight: bold;
+            }
+
+            input[type="reset"] {
+                background: #780505;
+            }
+
+            input[type="submit"]:hover {
+                background: #7e5a3e;
+            }
+
+            input[type="reset"]:hover {
+                background: #81a1c3;
+            }
+            </style>
+            <head>
+                <body>
+                    
+                    <form action="" method="post">
+
+                        <!--Bagian Akun-->
+                        <fieldset>
+                            <legend>Akun</legend>
+                            <table>
+                                <tr>
+                                    <td>Username</td>
+                                    <td><input type="text" name="username" placeholder="Masukkan Email"></td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td><input type="password" name="password" placeholder="Masukkan Password"></td>
+                                </tr>
+                                <tr>
+                                    <td>Konfirmasi Password</td>
+                                    <td><input type="password" name="konfirmasi password" placeholder="Konfirmasi Password"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+
+                        <!--Bagian Data-->
+                        <fieldset>
+                            <legend>Data</legend>
+                            <table>
+                                <tr>
+                                    <td>Nama</td>
+                                    <td><input type="text" name="nama" placeholder="Nama Lengkap"></td>
+                                </tr>
+                                <tr>
+                                    <td>Jenis Kelamin</td>
+                                    <td>
+                                        <input type="radio" name="jk" value="laki-laki">Laki-Laki
+                                        <br><input type="radio" name="jk" value="Perempuan">Perempuan
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Alamat</td>
+                                    <td><textarea name="alamat" rows="4" placeholder="Masukkan Alamat Lengkap"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>Program Studi</td>
+                                    <td>
+                                        <select name="Program Studi">
+                                            <option value="">--Pilih Program Studi--</option>
+                                            <option value="TI">Teknologi Informasi</option>
+                                            <option value="ILKOM">Ilmu Komputer</option>
+                                            <option value="SI">Sistem Informasi</option>
+                                            <option value="TI">Teknik Informatika</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Minat & Bakat</td>
+                                    <td>
+                                        <input type="checkbox" name="info" value="olahraga"> Olahraga<br></br>
+                                        <input type="checkbox" name="info" value="Bermain Musik"> Bermain Musik<br></br>
+                                        <input type="checkbox" name="info" value="Bernyanyi"> Bernyanyi<br></br>
+                                        <input type="checkbox" name="info" value="Menari"> Menari<br></br>
+                                        <input type="checkbox" name="info" value="Membaca"> Membaca<br></br>
+                                        <input type="checkbox" name="info" value="Memasak"> Memasak<br></br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="submit" value="Daftar">
+                                        <input type="reset" value="Reset">
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+
+                </style>
+                </body>
+            </head>   
+    </style>
 </head>
 <body>
-  <a href="https://sesilia-hash.github.io/tugaske2/" target="_blank"
-   style="display: inline-block;
-          padding: 10px 20px;
-          background-color: #28a745;
-          color: white;
-          text-decoration: none;
-          border-radius: 5px;
-          font-size: 18px;">
-  BUKA WEB TUGAS 2
-</a> 
-<!--Membuat tabel-->
-<table border="1" cellpading="10" cellpacing="0">
-    <tr>
-        <td colspan="2" align="center" width="1500" height="60"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMR1RWjfynK_ZUaPXMKznECk3kthKvnaqYWA&s" alt="header"></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center" height="60">
-                <a href="https://www.instagram.com/p/DKBrSTFSm7o/?utm_source=ig_web_copy_link">Ayam Goreng Mentega</a>
-            </td>
-        </tr>
-<tr>
-    <td witdh="30%" height="500" rowspan="2" align="center">
-        <h2>Bahan dan Cara Pembuatan Ayam Mentega</h1>
-    </td>
-    </tr>
-    <td align="center" width="70%" height="90">
-        <p><b>Bahan:</b></p>
-        <br>1 ekor ayam potong2
 
-       <br> 1 buah bawang bombay potong2
-
-        <br>3 siung bawang putih cincang
-
-       <br> 1 tangkai daun bawang potong2
-
-       <br> 1 buah jeruk nipis 
-
-       <br> 1 sdm kecap inggris
-
-        <br>1 sdm saos tomat
-
-        <br>1 sdt saus tiram
-
-       <br> 5 sdm kecap manis
-
-<p><b>Cara membuat:</b><p>
-<br>1. 
-Cuci bersih ayam lalu kucuri dengan air jeruk nipis dan taburi garam, aduk hingga ayam keset lalu diamkan 15 menit.
-<br>2.
-Panaskan minyak goreng yang banyak, campurkan 1 sdm mentega ke dalam minyak, goreng ayam hingga matang, angkat dan sisihkan.
-<br>3.
-Panaskan 3 sdm mentega, tumis bawang putih dan bawang bombay hingga harum, masukkan kecap manis, kecap inggris, saos tomat, saos tiram, merica dan garam. Masukkan ayam lalu aduk hingga bumbu merata ke ayam.
-<br>4.
-Tuang air secukupnya, aduk rata dan tunggu mendidih dan air surut dan mengental lalu tes rasa. Apabila sudah pas, masukkan daun bawang dan Ayam Goreng Mentega siap disajikan.
-
-    </td>
     
-    </tr>
-<td colspan="2" align="center">
-    <p><u><b>R</b><i>esep</i> <b>M</b><i>antul</i></u></p>
-</td>
-        </tr>
-</a>
-</table>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
